@@ -1,0 +1,43 @@
+$blue: #91bbff;
+$red: #c1473a;
+
+$text-color: #45473f;
+$border-color:#8fa4ba;
+$background-color:#ededed;
+$block-background-color:#c1c1c1;
+$box-shadow: 0 0 12px 1px rgba(122,95,95,1);
+$course-box-shadow:  0 0 8px 2px #bac7dd;;
+
+@mixin scroll($background) {
+
+	::-webkit-scrollbar-button {
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:6px;
+		height:0px
+	}
+
+	::-webkit-scrollbar-track {
+		background-color:$background;
+	}
+
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color:$blue;
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+
+	::-webkit-resizer{
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:7px;
+		height:0px
+	}
+
+	::-webkit-scrollbar{
+		width: 11px;
+	}
+
+}

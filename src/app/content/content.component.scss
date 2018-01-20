@@ -1,0 +1,13 @@
+@import "./../common.scss";
+
+:host {
+	height: 100%;
+	display: flex;
+}
+
+.container {
+	overflow-y: auto;
+	height: 100%;
+	width: 100%;
+}
+@include scroll($block-background-color);

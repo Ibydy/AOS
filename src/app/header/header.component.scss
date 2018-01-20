@@ -1,0 +1,8 @@
+@import "./../common.scss";
+.header {
+	display: flex;
+	height: 50px;
+	background-color: $block-background-color;
+	box-shadow: $box-shadow;
+	border-bottom: 1px solid $border-color;
+}

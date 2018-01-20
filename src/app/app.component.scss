@@ -1,0 +1,24 @@
+@import "./common.scss";
+
+/deep/ body {
+  background-color: $background-color;
+	color: $text-color;
+}
+
+/deep/ input {
+	background: transparent;
+	border: 1px solid $border-color;
+	font-size: 15px;
+	height: 20px;
+	color: $text-color;
+	outline-color: $red;
+	outline-width: 1px;
+}
+
+.app {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	flex-direction: column;
+}

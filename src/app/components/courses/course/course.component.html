@@ -1,0 +1,13 @@
+<div class="container">
+	<i class="fa fa-pencil" aria-hidden="true"></i>
+	<div class="container-name">
+		<span *ngIf="!editing">{{course.name}}</span>
+		<input *ngIf="editing" [(ngModel)]="course.name" (change)="updateCourse()">
+	</div>
+	<div class="container-author">
+		Захаревич Лев
+	</div>
+	<div class="container-rating">
+		{{course.getRating()}}
+	</div>
+</div>
