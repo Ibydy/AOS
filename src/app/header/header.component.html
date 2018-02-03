@@ -1,3 +1,14 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
 <div class="header">
-
+	<div class="header-left">
+		<button class="common_button header_button" routerLink="/">AOS</button>
+	</div>
+	<div class="header-right">
+		<button class="mobile" (click)="showMobileButtons = !showMobileButtons"></button>
+		<div class="other-buttons" [ngClass]="showMobileButtons ? 'other-buttons_visible' : ''">
+			<button class="common_button header_button" routerLink="/registration">О нас</button>
+			<button class="common_button header_button" routerLink="/registration">Стать преподователем</button>
+		</div>
+		<button class="common_button header_button" routerLink="/registration">Войти</button>
+	</div>
 </div>
