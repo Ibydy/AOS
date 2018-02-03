@@ -6,16 +6,16 @@
 		<div class="container-inner_fields">
 			<div class="field">
 				<div class="field_text">Логин</div>
-				<input>
+				<input [(ngModel)]="login">
 			</div>
 			<div class="field">
 				<div class="field_text">Пароль</div>
-				<input>
+				<input [(ngModel)]="password" type="password">
 			</div>
 		</div>
 		<div class="container-inner_buttons">
 			<button class="common_button">Войти</button>
-			<button class="common_button">Зарегистрироваться</button>
+			<button class="common_button" (click)="registrate()">Зарегистрироваться</button>
 			<div class="others">
 
 			</div>

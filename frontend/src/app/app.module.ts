@@ -11,7 +11,7 @@ import {appRoutes} from './appRoutes';
 import { CourseComponent } from './components/courses/course/course.component';
 import {FormsModule} from '@angular/forms';
 import { RegistrationComponent } from './components/registration/registration.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -25,7 +25,8 @@ import { RegistrationComponent } from './components/registration/registration.co
 	imports: [
 		BrowserModule,
 		RouterModule.forRoot(appRoutes),
-		FormsModule
+		FormsModule,
+		HttpClientModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
