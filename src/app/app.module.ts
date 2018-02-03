@@ -10,6 +10,7 @@ import {RouterModule} from '@angular/router';
 import {appRoutes} from './appRoutes';
 import { CourseComponent } from './components/courses/course/course.component';
 import {FormsModule} from '@angular/forms';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms';
 		HeaderComponent,
 		ContentComponent,
 		CoursesComponent,
-		CourseComponent
+		CourseComponent,
+		RegistrationComponent
 	],
 	imports: [
 		BrowserModule,

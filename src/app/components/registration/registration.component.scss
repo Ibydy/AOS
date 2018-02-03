@@ -1,0 +1,56 @@
+@import "./../../common.scss";
+.container {
+	display:flex;
+	flex-direction: column;
+	padding: 0 10px;
+	height: 100%;
+	width: calc(100% - 20px);
+	align-items: center;
+	justify-content: center;
+	&-inner {
+		margin-top: 40px;
+		box-shadow: $box-shadow;
+		width: 300px;
+		background-color: $background-color;
+		&_fields {
+			justify-content: space-evenly;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+		&_buttons {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			padding: 10px 0;
+		}
+	}
+	&-header {
+		font-size: 24px;
+	}
+}
+.field {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+	&_text{
+		display: flex;
+		justify-content: center;
+		margin: 10px 0;
+		font-size: 25px;
+	}
+	input {
+		font-size: 20px;
+		height: 30px;
+		text-align: center;
+	}
+}
+
+.others {
+	margin-top: 10px;
+	height: 50px;
+	width: 100%;
+	border-top: 1px dashed $border-color;
+}
